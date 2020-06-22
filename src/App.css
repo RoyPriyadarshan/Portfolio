@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');  
+@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+
+
+.typer{
+    font-family: Finger Paint;
+}
+.welcome{
+    font-family: Architects Daughter;
+}
+.intro{
+    font-family: Frijole;
+}
+.navbar-dark {
+    color:floralwhite;
+    background-color:#000000;
+}
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #dde7f2 ;
+    color:black;
+    opacity: 0.85;
+}
+
+.navItem{
+    margin: 5px;
+    margin-right: 5px;
+}
+
+.aboutme{
+    text-align: center;
+    font-family: Delius Swash Caps;
+}
+.aboutDescription{
+    text-align: center;
+    font-family: Handlee;
+}
+.backAbout{
+    background-color: #eeeeee;
+    color:black;
+    /* opacity: 0.5; */
+}
