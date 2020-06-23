@@ -3,10 +3,12 @@ import './App.css';
 import Chart from "./Component/chartComponent";
 import Introduction from "./Component/introductionComponent";
 import AboutMe from "./Component/aboutMeComponent";
-import Projects from "./Component/projectComponent"
+import Projects from "./Component/projectComponent";
+import Contact from "./Component/contactComponent";
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import scrollToComponent from 'react-scroll-to-component';
 import { Parallax } from "react-parallax";
+import Reveal from 'react-reveal/Reveal';
 
 
 
@@ -54,23 +56,23 @@ class App extends Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar className='col-md-12 justify-content-end'>
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-home fa-lg"></span>{' '} Home {' '} <span> </span> </a>
+                  <a className='btn' onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-home fa-lg"></span>{' '} Home {' '} <span> </span> </a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} >{' '}<span className="fa fa-child fa-lg"></span>{' '} About Me </a>
+                  <a className='btn' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} >{' '}<span className="fa fa-child fa-lg"></span>{' '} About Me </a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-cogs fa-lg"></span>{' '} Skills</a>
+                  <a className='btn' onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-cogs fa-lg"></span>{' '} Skills</a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa  fa-cubes fa-lg"></span>{' '} Projects</a>
+                  <a className='btn' onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa  fa-cubes fa-lg"></span>{' '} Projects</a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-paper-plane fa-lg"></span>{' '} Contact Me</a>
+                  <a className='btn' onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-paper-plane fa-lg"></span>{' '} Contact Me</a>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -85,7 +87,9 @@ class App extends Component {
           >
             <div style={{ height: 800 }}>
               <div style={insideStyles}>
+              <Reveal effect="fadeInUp">
                 <Introduction />
+                </Reveal>
               </div>
             </div>
           </Parallax>
@@ -99,7 +103,7 @@ class App extends Component {
             strength={700}
             blur={{ min: -2, max: 5 }}
           >
-            <div style={{ height: 800 }}>
+            <div style={{ height: 1000 }}>
               <div style={insideStyles}>
               <AboutMe />
               </div>
@@ -123,6 +127,7 @@ class App extends Component {
           </Parallax>
         </div>
         </section>
+
         <section className='Projects' ref={(section) => { this.Projects = section; }}>
         <div  style={styles}>
           <Parallax
@@ -139,16 +144,16 @@ class App extends Component {
         </div>
         </section>
 
-        <section className='Projects' ref={(section) => { this.Skills = section; }}>
+        <section className='Contact' ref={(section) => { this.Contact = section; }}>
         <div style={styles}>
           <Parallax
-            bgImage={require('./Images/aboutMe.jpg')}
+            bgImage={require('./Images/contact.jpg')}
             strength={300}
             blur={{ min: -2, max: 5 }}
           >
             <div style={{ height: 800 }}>
               <div style={insideStyles}>
-              <Chart/>
+              <Contact/>
               </div>
             </div>
           </Parallax>

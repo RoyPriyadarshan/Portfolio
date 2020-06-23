@@ -91,7 +91,6 @@
 .card:hover .h2 small { color: #fff }
 .card:hover .p2 { margin-top: 300px }
 .card_circle {
-    background: url('Images/profile.jpg') no-repeat center bottom;
     background-color: #3487f7;
     background-size: cover;
     border-radius: 50%;
@@ -100,6 +99,21 @@
     margin-top: -270px;
     position: absolute;
     width: 450px;
+}
+.card_circle_img_one{
+    background: url('Images/mathWebsite.jpg') no-repeat center bottom;
+}
+.card_circle_img_two{
+    background: url('Images/mathGame.jpg') no-repeat center bottom;
+}
+.card_circle_img_three{
+    background: url('Images/hotelManagement.jpg') no-repeat center bottom;
+}
+.card_circle_img_four{
+    background: url('Images/resourceAllocator.jpg') no-repeat center bottom;
+}
+.card_circle_img_five{
+    background: url('Images/restrauntWebsite.jpg') no-repeat center bottom;
 }
 .h2 {
     color: #3487f7;
@@ -156,3 +170,11 @@
     text-decoration: none;
 }
 
+i:hover{
+    color: #fff;
+}
+.footer{
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}

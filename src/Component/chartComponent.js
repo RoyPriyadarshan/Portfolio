@@ -86,16 +86,20 @@ class Chart extends Component {
 
     render() {
         return (
+            <>
+            <div className='container'>
+            <h3>My Skills</h3>
+            
+            </div>
             <div className='charts container' >
-                <div className='row'>
-                    <h3>My Skills</h3>
-                </div>
 
+                    
                 <HorizontalBar
                     data={data}
                     options={options}
                 />
             </div>
+            </>
         );
     }
 }
