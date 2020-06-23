@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Typical from 'react-typical';
 import { Jumbotron } from 'reactstrap';
-import Image from 'react-bootstrap/Image'
+
 
 
 class Introduction extends Component {
@@ -10,9 +10,8 @@ class Introduction extends Component {
         return (
 
             <div className='container'>
-                <Jumbotron className='col-12 col-md-10'>
-                    <div className='col-12 col-md-7' >
-                        <h1 className='intro'>Hi, I'm Priyadarshan Roy</h1>
+                <Jumbotron className='col-12 col-md-12'>
+                        <h1 className='intro'>"Hi, I'm Priyadarshan Roy"</h1>
                         <h2 className='welcome'>
                             <Typical
                                 loop={Infinity}
@@ -37,10 +36,6 @@ class Introduction extends Component {
                                 ]}
                             />
                         </h3>
-                    </div>
-                    <div>
-                    <Image src="./Images/intro" rounded />
-                    </div>
                 </Jumbotron>
             </div>
 
