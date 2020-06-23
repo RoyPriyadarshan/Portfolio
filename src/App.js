@@ -54,23 +54,23 @@ class App extends Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar className='col-md-12 justify-content-end'>
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 2500, ease: 'inQuad' })} ><span className="fa fa-home fa-lg"></span>{' '} Home {' '} <span> </span> </a>
+                  <a onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-home fa-lg"></span>{' '} Home {' '} <span> </span> </a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 2500, ease: 'inQuad' })} >{' '}<span className="fa fa-child fa-lg"></span>{' '} About Me </a>
+                  <a onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} >{' '}<span className="fa fa-child fa-lg"></span>{' '} About Me </a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'inQuad' })} ><span className="fa fa-cogs fa-lg"></span>{' '} Skills</a>
+                  <a onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-cogs fa-lg"></span>{' '} Skills</a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 2500, ease: 'inQuad' })} ><span className="fa  fa-cubes fa-lg"></span>{' '} Projects</a>
+                  <a onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa  fa-cubes fa-lg"></span>{' '} Projects</a>
                 </NavItem>
 
                 <NavItem className='navItem'>
-                  <a onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'inQuad' })} ><span className="fa fa-paper-plane fa-lg"></span>{' '} Contact Me</a>
+                  <a onClick={() => scrollToComponent(this.Skills, { offset: 0, align: 'top', duration: 2500, ease: 'outCirc' })} ><span className="fa fa-paper-plane fa-lg"></span>{' '} Contact Me</a>
                 </NavItem>
               </Nav>
             </Collapse>
